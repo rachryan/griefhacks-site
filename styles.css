@@ -153,18 +153,13 @@ p {
 
 .hero {
   padding: 4.5rem 0 4rem;
-  background: radial-gradient(
-      circle at top left,
-      rgba(175, 204, 201, 0.35),
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(243, 210, 188, 0.45),
-      transparent 55%
-    ),
-    var(--bg-soft);
+  background-color: #faf9f7; /* fallback */
+  background-image: url("images/hero-bg.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
+
 
 .hero-inner {
   display: flex;
