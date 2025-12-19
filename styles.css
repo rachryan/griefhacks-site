@@ -166,13 +166,13 @@ p {
   justify-content: center;
 }
 
-.hero-card {
-  width: min(520px, 100%);
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 28px;
-  padding: 3.25rem 3rem;
-  box-shadow: var(--shadow-soft);
-  text-align: center;
+.hero-image {
+  width: 100%;
+  max-width: 360px;   /* 👈 this is the main control knob */
+  height: auto;
+  display: block;
+  margin: 1.5rem auto 0;
+
 }
 
 .hero-overline {
