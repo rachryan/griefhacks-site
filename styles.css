@@ -230,6 +230,26 @@ p {
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
   border-color: var(--accent-soft);
 }
+/* Hero option links (override anchor defaults) */
+.hero-option {
+  display: block;              /* make entire card clickable */
+  text-decoration: none;       /* remove underline */
+  color: var(--text-main);     /* remove blue link color */
+}
+
+.hero-option:visited {
+  color: var(--text-main);     /* prevent purple visited state */
+}
+
+.hero-option:hover {
+  text-decoration: none;       /* keep underline off on hover */
+}
+
+.hero-option:focus-visible {
+  outline: 2px solid rgba(107, 143, 124, 0.6);
+  outline-offset: 4px;
+}
+
 
 /* Cards */
 
