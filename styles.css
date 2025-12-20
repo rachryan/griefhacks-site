@@ -354,6 +354,45 @@ p {
   display: inline-block;
   margin-top: 0.25rem;
 }
+/* =========================
+   Stories polish
+   ========================= */
+
+/* Make story cards equal-height and nicely spaced inside */
+.stories-section .card-link .card-link-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Keep image + heading spacing consistent */
+.stories-section .card-image {
+  margin-bottom: 1.1rem; /* keep your current rhythm */
+}
+
+/* Give cards a clear hover affordance */
+.stories-section .card-link {
+  transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease;
+}
+
+.stories-section .card-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.09);
+  border-color: rgba(107, 143, 124, 0.35);
+}
+
+/* Keyboard users: match the hover vibe */
+.stories-section .card-link .card-link-inner:focus-visible {
+  outline: 2px solid rgba(107, 143, 124, 0.6);
+  outline-offset: 6px;
+  border-radius: var(--radius-lg);
+}
+
+/* Push the CTA ("Read") to the bottom */
+.stories-section .card-cta {
+  margin-top: auto;
+  padding-top: 0.8rem;
+}
 
 
 /* About */
