@@ -172,16 +172,32 @@ p {
 .hero {
   padding: 4.5rem 0 4rem;
   background-color: #faf9f7; /* fallback */
-  background-image: url("images/winding-path.png");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/winding-path.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  opacity: 0.18;          /* main control knob */
+  pointer-events: none;
+}
+
 
 .hero-inner {
   display: flex;
   justify-content: center;
   min-width: 0;
+}
+.hero-inner,
+.hero-card {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-image {
