@@ -167,9 +167,7 @@ p {
   border: 1px solid var(--accent);
 }
 
-/* =========================
-   HERO (fully responsive background)
-   ========================= */
+/* Hero */
 
 .hero {
   padding: 4.5rem 0 4rem;
@@ -178,54 +176,114 @@ p {
   overflow: hidden;
 }
 
-/* Background image layer */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-
   background-image: url("images/winding-path.png");
   background-repeat: no-repeat;
-
-  /*
-    Core scaling logic:
-    - Scales with viewport on small screens
-    - Caps size on large screens
-    - Preserves aspect ratio
-  */
-  background-size: min(90vw, 520px) auto;
-
-  /*
-    Fluid positioning:
-    - Anchors right
-    - Adjusts vertically across screen sizes
-  */
-  background-position: right clamp(45%, 55%, 60%);
-
-  opacity: 0.18;        /* visual intensity control */
+  background-position: right center;
+  background-size: contain;
+  opacity: 0.18;          /* main control knob */
   pointer-events: none;
 }
 
-/* Ensure hero content stays above background */
+
 .hero-inner {
   display: flex;
   justify-content: center;
   min-width: 0;
-  position: relative;
-  z-index: 1;
 }
-
+.hero-inner,
 .hero-card {
   position: relative;
   z-index: 1;
 }
 
-/* Optional mobile softening */
-@media (max-width: 640px) {
+.hero-image {
+  width: 100%;
+  max-width: 360px; /* main control knob */
+  height: auto;
+  display: block;
+  margin: 1.5rem auto 0;
+}
+
+.hero-overline {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 0 1.25rem;
+  color: var(--text-muted);
+}
+
+.hero-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.2rem;
+  min-width: 0;
+}
+
+.hero-option {
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+  padding: 1.6rem 1rem;
+  background: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.12s ease, box-shadow 0.12s ease,
+    border-color 0.12s ease;
+}
+
+.hero-option span {
+  white-space: pre-line;
+}
+
+.hero-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-soft);
+}
+/* Hero option links (override anchor defaults) */
+.hero-option {
+  display: block;              /* make entire card clickable */
+  text-decoration: none;       /* remove underline */
+  color: var(--text-main);     /* remove blue link color */
+}
+
+.hero-option:visited {
+  color: var(--text-main);     /* prevent purple visited state */
+}
+
+.hero-option:hover {
+  text-decoration: none;       /* keep underline off on hover */
+}
+
+.hero-option:focus-visible {
+  outline: 2px solid rgba(107, 143, 124, 0.6);
+  outline-offset: 4px;
+}
+/* Mobile: keep it centered and controlled */
+@media (max-width: 700px) {
   .hero::before {
-    opacity: 0.14;
+    background-position: center 60%;
+    background-size: 90vw auto; /* scales with screen width */
+    opacity: 0.14;             /* optional: calmer on mobile */
   }
 }
+
+/* Very wide screens: prevent it from getting comically large */
+@media (min-width: 1200px) {
+  .hero::before {
+    background-position: right center;
+    background-size: 520px auto; /* cap size on big displays */
+  }
+}
+
+
+
 
 
 
