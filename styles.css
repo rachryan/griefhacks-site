@@ -631,35 +631,45 @@ fieldset {
   text-decoration: underline;
 }
 
-.newsletter-form {
+/* Newsletter form polish */
+.newsletter-row {
   display: flex;
-  gap: 0.4rem;
-  margin-top: 0.6rem;
-  min-width: 0;
+  gap: 0.9rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.newsletter-form input[type="email"] {
-  flex: 1;
+.newsletter-row input[type="email"] {
+  flex: 1 1 280px;
+  padding: 0.95rem 1rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  padding: 0.5rem 0.75rem;
-  background: rgba(3, 16, 12, 0.25);
-  color: #f3f7f5;
+  border: 1px solid var(--border-soft);
+  font: inherit;
+  background: #fff;
 }
 
-.newsletter-form input::placeholder {
-  color: #c7d3ce;
-}
-
-.newsletter-form button {
+.newsletter-row button {
+  padding: 0.9rem 1.1rem;
   border-radius: 999px;
-  border: none;
-  padding: 0.5rem 0.95rem;
-  background: #f5f2ee;
-  color: #22362f;
-  font-size: 0.9rem;
+  border: 1px solid var(--border-soft);
+  background: #fff;
+  font: inherit;
   cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
 }
+
+.newsletter-row button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-soft);
+}
+
+.newsletter-row button:focus-visible {
+  outline: 2px solid rgba(107, 143, 124, 0.6);
+  outline-offset: 4px;
+}
+
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
