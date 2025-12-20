@@ -324,6 +324,29 @@ p {
     );
   background-blend-mode: soft-light, normal;
 }
+/* Clickable story cards */
+.card-link .card-link-inner {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-link .card-link-inner:visited {
+  color: inherit;
+}
+
+.card-link .card-link-inner:focus-visible {
+  outline: 2px solid rgba(107, 143, 124, 0.6);
+  outline-offset: 4px;
+}
+
+/* Keep the CTA visually consistent */
+.card-cta {
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
 
 /* About */
 
