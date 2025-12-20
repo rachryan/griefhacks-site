@@ -2,26 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>GriefHacks — Feel Seen. Find Tools. Connect.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GriefHacks</title>
   <meta
     name="description"
-    content="GriefHacks is a gentle space to feel seen, find grief tools, and connect with others navigating loss."
+    content="GriefHacks is a calm, practical space for grief tools, honest language, and steady support after loss."
   />
 
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet"
-  />
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">GriefHacks</div>
+      <a class="brand" href="#top" aria-label="GriefHacks home">GriefHacks</a>
+
       <nav class="main-nav">
         <a href="#about">About</a>
         <a href="#stories">Stories</a>
@@ -32,250 +27,272 @@
   </header>
 
   <!-- HERO / ENTRY QUESTION -->
-  <section class="hero">
+  <section class="hero" id="top">
     <div class="container hero-inner">
       <div class="hero-card">
         <p class="hero-overline">GriefHacks</p>
         <h1>What are you<br />looking for today?</h1>
 
-        <!-- Option A: make choices real links -->
         <div class="hero-options">
-          <a class="hero-option" href="#stories"><span>To feel<br />seen</span></a>
+          <a class="hero-option" href="#feel-seen"><span>To feel<br />seen</span></a>
           <a class="hero-option" href="#tools"><span>To find<br />tools</span></a>
           <a class="hero-option" href="#reach-out"><span>To<br />connect</span></a>
         </div>
-
-          </div>
-
- 
+      </div>
     </div>
   </section>
-
 
   <!-- ABOUT -->
   <section id="about" class="section about-section">
     <div class="container split">
       <div class="about-text">
-        <p class="section-overline">About Me</p>
+        <p class="section-overline" id="feel-seen">About Me</p>
         <h2>A space to be human in your grief.</h2>
+
         <p>
           I know what it is to have your life split into <em>before</em> and <em>after</em>.
           GriefHacks is a quiet corner of the internet where you don’t have to perform,
           explain, or rush your way through loss.
         </p>
+
         <p>
           Here you’ll find honest stories, practical tools, and gentle structure for
           rebuilding a life that can hold both love and sorrow. No toxic positivity.
           No fixing. Just real human experience, skillfully held.
         </p>
+
         <p>
           If you’re looking for validation, language for what you’re feeling, or ways
           to steady yourself when the waves hit, you’re in the right place.
         </p>
-    </div>
+      </div>
 
+      <div class="about-illustration">
         <img
-          src="images/connection-hero.png"
-          alt="Hands cradling a warm mug, conveying comfort and care"
-          class="hero-image"
+          src="images/AboutMe.png"
+          alt="Illustration representing reflection and personal story"
+          class="about-image"
         />
       </div>
     </div>
   </section>
 
+  <!-- STORIES (merged: former Stories + Blog) -->
+  <section id="stories" class="section stories-section">
+    <div class="container">
+      <p class="section-overline">Stories</p>
+      <h2>Words for the days that don’t make sense yet.</h2>
 
- <!-- STORIES (merged: former Stories + Blog) -->
-<section id="stories" class="section stories-section">
-  <div class="container">
-    <p class="section-overline">Stories</p>
-    <h2>Words for the days that don’t make sense yet.</h2>
+      <p class="section-intro">
+        Longer reflections, tools, and honest language for living with grief.
+        Take what fits. Leave the rest.
+      </p>
 
-    <p class="section-intro">
-      Longer reflections, tools, and honest language for living with grief.
-      Take what fits. Leave the rest.
-    </p>
+      <div class="grid grid-3">
+        <article class="card card-link">
+          <a href="blog/learning-to-breathe-again.html" class="card-link-inner">
+            <img
+              src="images/story-learning-to-breathe.png"
+              alt="Soft illustration for Learning to Breathe Again"
+              class="card-image"
+            />
+            <h3>Learning to Breathe Again</h3>
+            <p>
+              A gentle reflection on surviving the early waves of grief — and finding ways
+              to carry the weight without letting it carry you.
+            </p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
 
-    <div class="grid grid-3">
-      <article class="card card-link">
-        <a href="blog/learning-to-breathe-again.html" class="card-link-inner">
-          <img
-            src="images/story-learning-to-breathe.png"
-            alt="Soft illustration for Learning to Breathe Again"
-            class="card-image"
-          />
-          <h3>Learning to Breathe Again</h3>
-          <p>
-            A gentle reflection on surviving the early waves of grief — and finding ways
-            to carry the weight without letting it carry you.
-          </p>
-          <span class="text-link card-cta">Read</span>
-        </a>
-      </article>
+        <article class="card card-link">
+          <a href="blog/how-to-handle-the-question.html" class="card-link-inner">
+            <img
+              src="images/story-how-are-you.png"
+              alt="Soft illustration for How to handle the question “How are you?”"
+              class="card-image"
+            />
+            <h3>How to handle the question “How are you?”</h3>
+            <p>Four honest answers that don’t betray your reality or drain your energy.</p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
 
-      <article class="card card-link">
-        <a href="blog/how-to-handle-the-question.html" class="card-link-inner">
-          <img
-            src="images/story-how-are-you.png"
-            alt="Soft illustration for How to handle the question “How are you?”"
-            class="card-image"
-          />
-          <h3>How to handle the question “How are you?”</h3>
-          <p>Four honest answers that don’t betray your reality or drain your energy.</p>
-          <span class="text-link card-cta">Read</span>
-        </a>
-      </article>
+        <article class="card card-link">
+          <a href="blog/finding-your-people-after-loss.html" class="card-link-inner">
+            <img
+              src="images/story-finding-your-people.png"
+              alt="Soft illustration for Finding your people after loss"
+              class="card-image"
+            />
+            <h3>Finding your people after loss</h3>
+            <p>On outgrowing old circles and building a new kind of community.</p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
 
-      <article class="card card-link">
-        <a href="blog/finding-your-people-after-loss.html" class="card-link-inner">
-          <img
-            src="images/story-finding-your-people.png"
-            alt="Soft illustration for Finding your people after loss"
-            class="card-image"
-          />
-          <h3>Finding your people after loss</h3>
-          <p>On outgrowing old circles and building a new kind of community.</p>
-          <span class="text-link card-cta">Read</span>
-        </a>
-      </article>
+        <article class="card card-link">
+          <a href="blog/when-your-world-shrinks.html" class="card-link-inner">
+            <img
+              src="images/story-when-world-shrinks.png"
+              alt="Soft illustration for When your world shrinks"
+              class="card-image"
+            />
+            <h3>When your world shrinks</h3>
+            <p>
+              Navigating friendships, family, and work when so few people understand
+              what your days really feel like.
+            </p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
 
-      <article class="card card-link">
-        <a href="blog/when-your-world-shrinks.html" class="card-link-inner">
-          <img
-            src="images/story-when-world-shrinks.png"
-            alt="Soft illustration for When your world shrinks"
-            class="card-image"
-          />
-          <h3>When your world shrinks</h3>
-          <p>
-            Navigating friendships, family, and work when so few people understand
-            what your days really feel like.
-          </p>
-          <span class="text-link card-cta">Read</span>
-        </a>
-      </article>
+        <article class="card card-link">
+          <a href="blog/carrying-love-forward.html" class="card-link-inner">
+            <img
+              src="images/figures-standing.png"
+              alt="Gentle illustration for Carrying love forward"
+              class="card-image"
+            />
+            <h3>Carrying love forward</h3>
+            <p>
+              Ways to keep their memory alive in ordinary life without feeling like
+              you’re “stuck in the past.”
+            </p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
 
-      <article class="card card-link">
-        <a href="blog/carrying-love-forward.html" class="card-link-inner">
-          <img
-            src="images/figures-standing.png"
-            alt="Gentle illustration for Carrying love forward"
-            class="card-image"
-          />
-          <h3>Carrying love forward</h3>
-          <p>
-            Ways to keep their memory alive in ordinary life without feeling like
-            you’re “stuck in the past.”
-          </p>
-          <span class="text-link card-cta">Read</span>
-        </a>
-      </article>
-
-      <article class="card card-link card-browse-all">
-        <a href="blog/index.html" class="card-link-inner">
-          <img
-            src="images/cozy-hands-cradling-warm-mug.png"
-            alt="Soft illustration for browsing all stories"
-            class="card-image"
-          />
-          <h3>Browse all stories</h3>
-          <p>
-            A simple index of everything published so far—stories, tools, guides, and prompts.
-          </p>
-          <span class="text-link card-cta">Browse</span>
-        </a>
-      </article>
+        <article class="card card-link card-browse-all">
+          <a href="blog/index.html" class="card-link-inner">
+            <img
+              src="images/cozy-hands-cradling-warm-mug.png"
+              alt="Soft illustration for browsing all stories"
+              class="card-image"
+            />
+            <h3>Browse all stories</h3>
+            <p>
+              A simple index of everything published so far—stories, tools, guides, and prompts.
+            </p>
+            <span class="text-link card-cta">Browse</span>
+          </a>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- TOOLS + RESOURCES -->
-<section id="tools" class="section tools-section">
-  <div class="container">
-    <p class="section-overline">Grief Tools + Resources</p>
-    <h2>Steady, practical support for rough days.</h2>
+  <!-- TOOLS + RESOURCES -->
+  <section id="tools" class="section tools-section">
+    <div class="container">
+      <p class="section-overline">Grief Tools + Resources</p>
+      <h2>Steady, practical support for rough days.</h2>
 
-    <div class="grid grid-3 tools-grid">
-      <article class="tool-card card-link">
-        <a href="blog/tools-for-tricky-mornings.html" class="card-link-inner">
-          <h3>Tools for tricky mornings</h3>
-          <p>Simple nervous-system resets for when you wake up heavy and overwhelmed.</p>
-          <span class="text-link card-cta">Read</span>
-        </a>
-      </article>
+      <div class="grid grid-3 tools-grid">
+        <article class="tool-card card-link">
+          <a href="blog/tools-for-tricky-mornings.html" class="card-link-inner">
+            <h3>Tools for tricky mornings</h3>
+            <p>Simple nervous-system resets for when you wake up heavy and overwhelmed.</p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
 
-      <article class="tool-card card-link">
-        <a href="blog/anchor-practices.html" class="card-link-inner">
-          <h3>Anchor Practices</h3>
-          <p>Short practices to help you come back to your body when your mind spirals.</p>
-          <span class="text-link card-cta">Explore</span>
-        </a>
-      </article>
+        <article class="tool-card card-link">
+          <a href="blog/anchor-practices.html" class="card-link-inner">
+            <h3>Anchor Practices</h3>
+            <p>Short practices to help you come back to your body when your mind spirals.</p>
+            <span class="text-link card-cta">Explore</span>
+          </a>
+        </article>
 
-      <article class="tool-card card-link">
-        <a href="blog/tools-conversations-that-help.html" class="card-link-inner">
-          <h3>Conversations that help</h3>
-          <p>Scripts and prompts for talking about your grief with people in your life.</p>
-          <span class="text-link card-cta">Read</span>
-        </a>
-      </article>
+        <article class="tool-card card-link">
+          <a href="blog/tools-conversations-that-help.html" class="card-link-inner">
+            <h3>Conversations that help</h3>
+            <p>Scripts and prompts for talking about your grief with people in your life.</p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
 
-      <article class="tool-card card-link">
-        <a href="blog/index.html" class="card-link-inner">
-          <h3>Emergency kit</h3>
-          <p>Low-energy, low-decision tools for “just get me through today.”</p>
-          <span class="text-link card-cta">Browse</span>
-        </a>
-      </article>
+        <article class="tool-card card-link">
+          <a href="blog/index.html" class="card-link-inner">
+            <h3>Emergency kit</h3>
+            <p>Low-energy, low-decision tools for “just get me through today.”</p>
+            <span class="text-link card-cta">Browse</span>
+          </a>
+        </article>
 
-      <article class="tool-card card-link">
-        <a href="blog/for-anniversaries-+-dates.html" class="card-link-inner">
-          <h3>For anniversaries + dates</h3>
-          <p>Gentle structure for days that carry extra weight.</p>
-          <span class="text-link card-cta">Read</span>
-        </a>
-      </article>
+        <article class="tool-card card-link">
+          <a href="blog/for-anniversaries-+-dates.html" class="card-link-inner">
+            <h3>For anniversaries + dates</h3>
+            <p>Gentle structure for days that carry extra weight.</p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
 
-      <article class="tool-card card-link">
-        <a href="blog/index.html" class="card-link-inner">
-          <h3>For helpers + supporters</h3>
-          <p>Resources to share with the people who want to show up better for you.</p>
-          <span class="text-link card-cta">Browse</span>
-        </a>
-      </article>
+        <article class="tool-card card-link">
+          <a href="blog/index.html" class="card-link-inner">
+            <h3>For helpers + supporters</h3>
+            <p>Resources to share with the people who want to show up better for you.</p>
+            <span class="text-link card-cta">Browse</span>
+          </a>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="section newsletter-section">
+    <div class="container">
+      <div class="card">
+        <p class="section-overline">Newsletter</p>
+        <h2>Stay in touch, gently.</h2>
 
-  <!-- REACH OUT / MEMBERSHIP / CONTACT -->
+        <p class="section-intro">
+          Occasional notes—reflections, tools, and reminders that you’re not doing this wrong.
+          No spam. No fixing. Unsubscribe anytime.
+        </p>
+
+        <!-- IMPORTANT: Replace YOUR_USERNAME with your Buttondown username -->
+        <form
+          class="newsletter-form"
+          action="https://buttondown.com/api/emails/embed-subscribe/grief_hacks"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/grief_hacks', 'popupwindow')"
+        >
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input
+            id="newsletter-email"
+            type="email"
+            name="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+          />
+          <button type="submit" class="button-primary">Join the newsletter</button>
+
+          <p class="form-note">You can unsubscribe anytime.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- REACH OUT / CONTACT -->
   <section id="reach-out" class="section reach-section">
     <div class="container split">
       <div class="reach-copy" id="connect">
         <p class="section-overline">Reach Out</p>
         <h2>You don’t have to figure this out alone.</h2>
         <p>
-          GriefHacks Membership is for people who want a steady, grounded space
-          to process, learn tools, and feel less alone in the long tail of grief.
+          This space is here for connection, questions, and gentle support.
+          If something you’ve read resonates—or you’re not sure where to start—you’re welcome to reach out.
         </p>
-        <ul class="bullet-list">
-          <li>Monthly live sessions and gentle coworking</li>
-          <li>Small, private community (no public social media groups)</li>
-          <li>Access to tools library, recordings, and future workshops</li>
-        </ul>
-        <p>
-          Use the form to introduce yourself, choose a membership option, and
-          optionally join the newsletter. You’ll get an email with next steps and payment details.
-        </p>
+        <p>You don’t need the right words. One sentence is enough.</p>
       </div>
 
       <div class="reach-form-card">
-        <h3>Join + Reach Out</h3>
+        <h3>Get in touch</h3>
 
-        <form
-          class="contact-form"
-          action="https://formspree.io/f/mgvglbqp"
-          method="POST"
-        >
+        <form class="contact-form" action="https://formspree.io/f/mgvglbqp" method="POST">
           <label class="field">
             <span>Name</span>
             <input type="text" name="name" required />
@@ -287,66 +304,43 @@
           </label>
 
           <label class="field">
-            <span>What are you needing most right now? (optional)</span>
+            <span>Message (optional)</span>
             <textarea
               name="message"
               rows="4"
-              placeholder="One sentence is enough. Share as much or as little as you like."
+              placeholder="Share as much or as little as you like."
             ></textarea>
           </label>
 
-          <fieldset class="field">
-            <legend>Membership option</legend>
-            <label class="radio">
-              <input type="radio" name="membership" value="monthly" checked />
-              <span>Monthly membership (subscription)</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="membership" value="annual" />
-              <span>Annual membership (best value)</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="membership" value="not-sure" />
-              <span>Not sure yet — just want to connect</span>
-            </label>
-          </fieldset>
+          <input type="hidden" name="form_source" value="griefhacks-contact" />
 
-          <label class="checkbox">
-            <input type="checkbox" name="newsletter" value="yes" checked />
-            <span>Sign me up for the GriefHacks newsletter</span>
-          </label>
-
-          <input type="hidden" name="form_source" value="griefhacks-main-contact" />
-
-          <button type="submit" class="button-primary">
-            Submit + get next steps
-          </button>
+          <button type="submit" class="button-primary">Send message</button>
 
           <p class="form-note">
-            No spam, ever. You can unsubscribe from the newsletter or membership emails at any time.
+            If you’d like to stay in touch, you can also join the newsletter above.
+            No spam. Unsubscribe anytime.
           </p>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-block">
-        <div class="logo">GriefHacks</div>
+        <h4>GriefHacks</h4>
         <p class="footer-text">
-          A small, steady corner of the internet for humans living with loss.
+          A calm place for grief tools, honest language, and steady support.
         </p>
       </div>
 
       <div class="footer-block">
-        <h4>Quick links</h4>
+        <h4>Explore</h4>
         <ul class="footer-links">
           <li><a href="#about">About</a></li>
           <li><a href="#stories">Stories</a></li>
           <li><a href="#tools">Tools</a></li>
-          <li><a href="#reach-out">Membership</a></li>
+          <li><a href="#reach-out">Reach Out</a></li>
         </ul>
       </div>
 
@@ -355,25 +349,26 @@
         <p class="footer-text">
           Occasional emails with grounded reflections and practical grief tools.
         </p>
-       <form
-  class="newsletter-form"
-  action="https://buttondown.com/api/emails/embed-subscribe/YOUR_USERNAME"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.com/grief_hacks', 'popupwindow')"
->
-  <label class="sr-only" for="newsletter-email-footer">Email address</label>
-  <input
-    id="newsletter-email-footer"
-    type="email"
-    name="email"
-    autocomplete="email"
-    placeholder="you@example.com"
-    required
-  />
-  <button type="submit">Join</button>
-</form>
 
+        <!-- IMPORTANT: Replace YOUR_USERNAME with your Buttondown username -->
+        <form
+          class="newsletter-form"
+          action="https://buttondown.com/api/emails/embed-subscribe/YOUR_USERNAME"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/grief_hacks', 'popupwindow')"
+        >
+          <label class="sr-only" for="newsletter-email-footer">Email address</label>
+          <input
+            id="newsletter-email-footer"
+            type="email"
+            name="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+          />
+          <button type="submit">Join</button>
+        </form>
       </div>
     </div>
 
