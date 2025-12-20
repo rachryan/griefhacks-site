@@ -300,16 +300,17 @@ p {
   min-width: 0;
 }
 
-.card-image-placeholder {
-  height: 150px;
+.card-image {
+  width: 100%;
+  height: 150px;            /* keep a consistent frame */
+  object-fit: contain;      /* prevents awkward cropping */
+  object-position: center;  /* centers the artwork */
+  background: #ffffff;      /* clean fill behind transparent PNGs */
   border-radius: 14px;
-  background: linear-gradient(
-    135deg,
-    rgba(186, 210, 204, 0.5),
-    rgba(243, 210, 188, 0.55)
-  );
-  margin-bottom: 1.1rem;
+  display: block;
+  margin: 0 auto 1.1rem;    /* centers the frame and keeps spacing */
 }
+
 
 .tool-card {
   background: linear-gradient(
