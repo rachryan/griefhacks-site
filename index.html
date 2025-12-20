@@ -355,14 +355,25 @@
         <p class="footer-text">
           Occasional emails with grounded reflections and practical grief tools.
         </p>
-        <form
-          class="newsletter-form"
-          action="https://formspree.io/f/mgvglbqp"
-          method="POST"
-        >
-          <input type="email" name="email" placeholder="you@example.com" required />
-          <button type="submit">Join</button>
-        </form>
+       <form
+  class="newsletter-form"
+  action="https://buttondown.com/api/emails/embed-subscribe/YOUR_USERNAME"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/grief_hacks', 'popupwindow')"
+>
+  <label class="sr-only" for="newsletter-email-footer">Email address</label>
+  <input
+    id="newsletter-email-footer"
+    type="email"
+    name="email"
+    autocomplete="email"
+    placeholder="you@example.com"
+    required
+  />
+  <button type="submit">Join</button>
+</form>
+
       </div>
     </div>
 
