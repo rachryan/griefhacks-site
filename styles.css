@@ -325,6 +325,13 @@ p {
   background-blend-mode: soft-light, normal;
 }
 /* Clickable story cards */
+/* Remove default link styling from ALL text inside clickable cards */
+.card-link .card-link-inner,
+.card-link .card-link-inner * {
+  color: inherit;
+  text-decoration: none;
+}
+
 .card-link .card-link-inner {
   display: block;
   height: 100%;
