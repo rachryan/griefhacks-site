@@ -265,6 +265,22 @@ p {
   outline: 2px solid rgba(107, 143, 124, 0.6);
   outline-offset: 4px;
 }
+/* Mobile: keep it centered and controlled */
+@media (max-width: 700px) {
+  .hero::before {
+    background-position: center 60%;
+    background-size: 90vw auto; /* scales with screen width */
+    opacity: 0.14;             /* optional: calmer on mobile */
+  }
+}
+
+/* Very wide screens: prevent it from getting comically large */
+@media (min-width: 1200px) {
+  .hero::before {
+    background-position: right center;
+    background-size: 520px auto; /* cap size on big displays */
+  }
+}
 
 
 /* Cards */
