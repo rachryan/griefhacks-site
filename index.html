@@ -283,28 +283,54 @@
     </div>
   </section>
 
-  <!-- CONNECT (no form; email only) -->
-  <section id="connect" class="section connect-section">
-    <div class="container">
-      <div class="card">
-        <p class="section-overline">Connect</p>
-        <h2>One clear way to stay connected.</h2>
+<!-- CONNECT (Formspree) -->
+<section id="connect" class="section connect-section">
+  <div class="container">
+    <div class="card">
+      <p class="section-overline">Connect</p>
+      <h2>Send a note.</h2>
 
-        <p class="section-intro">
-          The newsletter is the best way to receive new tools and reflections as they’re added.
-        </p>
+      <p class="section-intro">
+        If you have a question or want to share a thought, you’re welcome to reach out.
+        You don’t need the perfect words.
+      </p>
 
-        <p>
-          If you need to reach me directly, email:
-          <a class="text-link" href="info4griefhacks@gmail.com">YOUR_EMAIL_ADDRESS</a>
-        </p>
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mgvglbqp"
+        method="POST"
+      >
+        <label class="field">
+          <span>Name</span>
+          <input type="text" name="name" />
+        </label>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+
+        <label class="field">
+          <span>Message</span>
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Share as much or as little as you like."
+            required
+          ></textarea>
+        </label>
+
+        <input type="hidden" name="form_source" value="griefhacks-connect" />
+
+        <button type="submit" class="button-primary">Send</button>
 
         <p class="form-note">
-          I can’t always respond quickly, but I do read messages.
+          If you’d rather keep it light, the newsletter is the best way to stay connected.
         </p>
-      </div>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer class="site-footer">
     <div class="container footer-inner">
