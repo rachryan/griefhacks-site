@@ -746,23 +746,55 @@ fieldset {
     align-items: flex-start;
   }
 }
-/* ---------- Header title: force brand look (no underline) ---------- */
-.site-header .site-title {
-  margin: 0;
+/* ===== Header restore (brand + menu) ===== */
+.site-header {
+  width: 100%;
+}
+
+.site-header .header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+/* Brand (clickable, not “link-styled”) */
+.site-header .brand,
+.site-header .brand:visited {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+  font-weight: 700;
   line-height: 1;
 }
 
-.site-header .site-title a,
-.site-header .site-title a:visited {
-  color: inherit;              /* keeps your brand color if the H1 is styled */
-  text-decoration: none;       /* kills underline */
-  border-bottom: none;         /* kills thick “underline” if it was border-based */
-  background: none;            /* kills any highlight/gradient underline tricks */
-  display: inline-block;
+/* Menu */
+.site-header .top-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.site-header .site-title a:hover,
-.site-header .site-title a:focus {
+.site-header .top-nav a,
+.site-header .top-nav a:visited {
+  color: inherit;
   text-decoration: none;
   border-bottom: none;
+  opacity: 0.9;
+}
+
+.site-header .top-nav a:hover {
+  opacity: 1;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .site-header .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
