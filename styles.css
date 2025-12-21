@@ -746,3 +746,23 @@ fieldset {
     align-items: flex-start;
   }
 }
+/* ---------- Header title: force brand look (no underline) ---------- */
+.site-header .site-title {
+  margin: 0;
+  line-height: 1;
+}
+
+.site-header .site-title a,
+.site-header .site-title a:visited {
+  color: inherit;              /* keeps your brand color if the H1 is styled */
+  text-decoration: none;       /* kills underline */
+  border-bottom: none;         /* kills thick “underline” if it was border-based */
+  background: none;            /* kills any highlight/gradient underline tricks */
+  display: inline-block;
+}
+
+.site-header .site-title a:hover,
+.site-header .site-title a:focus {
+  text-decoration: none;
+  border-bottom: none;
+}
