@@ -798,3 +798,22 @@ fieldset {
     align-items: flex-start;
   }
 }
+/* ===== Newsletter submit button ===== */
+.submit-btn {
+  background-color: #1f2937;   /* dark, readable */
+  color: #ffffff;              /* force visible text */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Hover / focus */
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #111827;
+}
