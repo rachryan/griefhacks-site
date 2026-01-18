@@ -570,6 +570,25 @@ fieldset {
   text-decoration: none;
   font-size: 0.92rem;
 }
+/* Framework CTA (Gumroad) */
+.framework-cta{
+  padding: 24px 0 56px;
+  text-align: center;
+}
+
+.framework-cta .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.framework-cta .button:hover{
+  transform: translateY(-1px);
+}
+
+.framework-cta .button:focus-visible{
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
 
 .text-link {
   font-size: 0.9rem;
