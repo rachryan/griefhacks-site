@@ -219,4 +219,195 @@
 
         <article class="tool-card card-link">
           <a href="blog/tools-anchor-practices.html" class="card-link-inner">
-            <h3>An
+            <h3>Anchor Practices</h3>
+            <p>Short practices to help you come back to your body when your mind spirals.</p>
+            <span class="text-link card-cta">Explore</span>
+          </a>
+        </article>
+
+        <article class="tool-card card-link">
+          <a href="blog/tools-conversations-that-help.html" class="card-link-inner">
+            <h3>Conversations that help</h3>
+            <p>Scripts and prompts for talking about your grief with people in your life.</p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
+
+        <article class="tool-card card-link">
+          <a href="blog/tools-emergency-kit.html" class="card-link-inner">
+            <h3>Emergency kit</h3>
+            <p>Low-energy, low-decision tools for “just get me through today.”</p>
+            <span class="text-link card-cta">Explore</span>
+          </a>
+        </article>
+
+        <article class="tool-card card-link">
+          <a href="blog/for-anniversaries-+-dates.html" class="card-link-inner">
+            <h3>For anniversaries + dates</h3>
+            <p>Gentle structure for days that carry extra weight.</p>
+            <span class="text-link card-cta">Read</span>
+          </a>
+        </article>
+
+        <article class="tool-card card-link">
+          <a href="blog/index.html" class="card-link-inner">
+            <h3>Links &amp; Resources</h3>
+            <p>Resources on one page for you.</p>
+            <span class="text-link card-cta">Browse</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER (primary CTA) -->
+  <section id="newsletter" class="section newsletter-section">
+    <div class="container">
+      <div class="card newsletter-card">
+        <p class="section-overline">Newsletter</p>
+        <h2>Stay in touch, gently.</h2>
+
+        <p class="section-intro">
+          Occasional notes—reflections, tools, and reminders that you’re not doing this wrong.
+          No spam. No fixing. Unsubscribe anytime.
+        </p>
+
+        <form
+          class="newsletter-form"
+          action="https://buttondown.com/api/emails/embed-subscribe/grief_hacks"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/grief_hacks', 'popupwindow')"
+        >
+          <label class="sr-only" for="newsletter-email">Email address</label>
+
+          <div class="newsletter-row">
+            <input
+              id="newsletter-email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              placeholder="info4griefhacks@gmail.com"
+              required
+            />
+            <button type="submit" class="button-primary">Join the newsletter</button>
+          </div>
+
+          <p class="form-note">You can unsubscribe anytime.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT (Formspree) -->
+  <section id="connect" class="section connect-section">
+    <div class="container">
+      <div class="card">
+        <p class="section-overline">Connect</p>
+        <h2>Send a note.</h2>
+
+        <p class="section-intro">
+          If you have a question or want to share a thought, you’re welcome to reach out.
+          You don’t need the perfect words.
+        </p>
+
+        <form class="contact-form" action="https://formspree.io/f/mgvglbqp" method="POST">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" />
+          </label>
+
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+
+          <label class="field">
+            <span>Message</span>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Share as much or as little as you like."
+              required
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="form_source" value="griefhacks-connect" />
+
+          <button type="submit" class="button-primary">Send</button>
+
+          <p class="form-note">
+            If you’d rather keep it light, the newsletter is the best way to stay connected.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-block">
+        <h4>GriefHacks</h4>
+        <p class="footer-text">
+          A calm place for grief tools, honest language, and steady support.
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-block">
+        <h4>Newsletter</h4>
+        <p class="footer-text">
+          Occasional emails with grounded reflections and practical grief tools.
+        </p>
+
+        <form
+          class="newsletter-form"
+          action="https://buttondown.com/api/emails/embed-subscribe/grief_hacks"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/grief_hacks', 'popupwindow')"
+        >
+          <label class="sr-only" for="newsletter-email-footer">Email address</label>
+
+          <input
+            id="newsletter-email-footer"
+            type="email"
+            name="email"
+            autocomplete="email"
+            autocapitalize="none"
+            autocorrect="off"
+            spellcheck="false"
+            placeholder="you@example.com"
+            required
+          />
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© <span id="year"></span> GriefHacks. All rights reserved.</span>
+        <span class="footer-small-links">
+          <a href="#">Terms</a> · <a href="#">Privacy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
