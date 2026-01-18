@@ -688,6 +688,17 @@ fieldset {
   outline: 2px solid rgba(107, 143, 124, 0.6);
   outline-offset: 4px;
 }
+.section.newsletter-section .button-primary {
+  background-color: #ffffff;
+  color: #2E2E2E;
+  border: 1px solid var(--border-soft);
+
+}
+
+/* Optional: hover */
+.section.newsletter-section .button-primary:hover {
+  filter: brightness(0.95);
+}
 
 
 .footer-bottom {
