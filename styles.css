@@ -37,6 +37,37 @@ body {
   align-items: center;
   padding: 1.4rem 0;
 }
+/* === FINAL GRID FIX - ADD THIS AT THE BOTTOM === */
+.grid-3 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+.card, .tool-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.card-link-inner {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.card-image {
+  height: 170px !important;
+  object-fit: contain !important;
+  background: #f8f5f2;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.card-cta {
+  margin-top: auto !important;
+}
 
 .brand { font-size: 1.55rem; font-weight: 700; text-decoration: none; }
 
