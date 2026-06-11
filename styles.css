@@ -3,16 +3,19 @@
   --bg-soft-alt: #f5f7f6;
   --bg-deep: #233730;
   --accent: #6b8f7c;
+  --accent-dark: #4a6655;
   --accent-soft: #d7e3dd;
   --text-main: #243036;
   --text-muted: #5f6b73;
   --card-bg: #ffffff;
   --border-soft: #e4e0da;
-  --radius-lg: 18px;
+  --radius-lg: 20px;
   --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.07);
 }
 
-* { box-sizing: border-box; }
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
 body {
   font-family: "Inter", system-ui, sans-serif;
@@ -22,16 +25,41 @@ body {
   margin: 0;
 }
 
-/* Layout */
-.container { width: min(1100px, 100% - 3rem); margin: 0 auto; padding: 0 1.5rem; }
+/* ==================== LINKS (fixes blue/purple) ==================== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--accent);
+}
+
+/* ==================== LAYOUT ==================== */
+.container {
+  width: min(1100px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .section { padding: 5.5rem 0; }
 
 /* Typography */
-h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; }
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", Georgia, serif;
+  margin: 0 0 0.8rem;
+  line-height: 1.2;
+}
+
 h1 { font-size: clamp(2.8rem, 4vw, 3.6rem); }
 h2 { font-size: clamp(2rem, 2.8vw, 2.4rem); }
 
-/* Header */
+/* ==================== HEADER ==================== */
 .site-header {
   position: sticky;
   top: 0;
@@ -48,29 +76,31 @@ h2 { font-size: clamp(2rem, 2.8vw, 2.4rem); }
   padding: 1.25rem 0;
 }
 
-.brand { font-size: 1.4rem; font-weight: 700; text-decoration: none; color: inherit; }
+.brand {
+  font-size: 1.45rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
 
 .top-nav a {
   margin-left: 1.8rem;
-  text-decoration: none;
-  color: var(--text-main);
   font-weight: 500;
 }
-.top-nav a:hover { color: var(--accent); }
 
-/* Hero */
+/* ==================== HERO ==================== */
 .hero {
   padding: 170px 20px 130px;
   background: linear-gradient(rgba(44, 62, 46, 0.65), rgba(44, 62, 46, 0.65)), 
-              url('https://picsum.photos/id/1015/1600/900') center/cover;
+              url('https://picsum.photos/id/1015/1600/900') center/cover no-repeat;
   color: white;
   text-align: center;
 }
 
 .hero h1 { margin-bottom: 1rem; }
-.hero p { font-size: 1.45rem; max-width: 700px; margin: 0 auto 2.5rem; }
+.hero p { font-size: 1.45rem; max-width: 700px; margin: 0 auto 2.5rem; line-height: 1.5; }
 
-/* CTA */
+/* CTA Buttons */
 .hero-cta-main, .button-outline {
   display: inline-block;
   padding: 16px 36px;
@@ -81,14 +111,17 @@ h2 { font-size: clamp(2rem, 2.8vw, 2.4rem); }
 }
 
 .hero-cta-main {
-  background: #4a6655;
+  background: var(--accent-dark);
   color: white;
 }
-.hero-cta-main:hover { background: #3a5244; transform: translateY(-3px); }
+.hero-cta-main:hover {
+  background: #3a5244;
+  transform: translateY(-3px);
+}
 
-/* Cards */
+/* ==================== CARDS ==================== */
 .card, .tool-card, .newsletter-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: var(--radius-lg);
   padding: 2rem 1.75rem;
   box-shadow: var(--shadow-soft);
@@ -99,20 +132,25 @@ h2 { font-size: clamp(2rem, 2.8vw, 2.4rem); }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 2rem;
 }
 
 .card-image {
-  height: 160px;
+  height: 165px;
   object-fit: contain;
   margin-bottom: 1.25rem;
   border-radius: 12px;
 }
 
-/* Footer */
+.card-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== FOOTER (lighter & cleaner) ==================== */
 .site-footer {
-  background: var(--bg-deep);
+  background: #1f2a26;
   color: #d5ded8;
   padding: 4rem 0 2rem;
 }
@@ -124,13 +162,15 @@ h2 { font-size: clamp(2rem, 2.8vw, 2.4rem); }
   margin-bottom: 3rem;
 }
 
-.footer-block h4 { color: white; margin-bottom: 1.2rem; }
+.footer-block h4 {
+  color: white;
+  margin-bottom: 1.2rem;
+}
 
-.footer-links a { color: #d5ded8; text-decoration: none; }
 .footer-links a:hover { color: white; }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.12);
   padding-top: 1.5rem;
   font-size: 0.85rem;
   display: flex;
@@ -139,12 +179,13 @@ h2 { font-size: clamp(2rem, 2.8vw, 2.4rem); }
   gap: 1rem;
 }
 
-/* Responsive */
+/* ==================== RESPONSIVE ==================== */
 @media (max-width: 900px) {
   .footer-inner { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
   .footer-inner { grid-template-columns: 1fr; }
+  .top-nav { gap: 1rem; }
   .hero { padding: 120px 20px 90px; }
 }
