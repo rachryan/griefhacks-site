@@ -18,8 +18,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -32,36 +31,24 @@ body {
   line-height: 1.6;
 }
 
-img, svg, video, canvas {
+img, svg {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Layout helpers */
+/* Layout */
 .container {
   width: min(1100px, calc(100% - 3rem));
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .section {
   padding: 5rem 0;
 }
 
-.split, .grid { /* existing grid styles unchanged */ 
-  display: grid;
-  gap: 1.75rem;
-  min-width: 0;
-}
-
-.grid-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* Typography - unchanged */
+/* Typography */
 h1, h2, h3, h4 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   margin: 0 0 0.75rem;
@@ -72,14 +59,61 @@ h1 { font-size: clamp(2.4rem, 3vw, 3rem); }
 h2 { font-size: clamp(1.9rem, 2.3vw, 2.3rem); }
 h3 { font-size: 1.3rem; }
 
-/* ==================== NEW HERO STYLES ==================== */
+.section-overline {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+
+/* ==================== HEADER ==================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(20px);
+  background: rgba(248, 245, 242, 0.96);
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.brand {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.top-nav {
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-nav a:hover {
+  color: var(--accent);
+}
+
+/* ==================== HERO ==================== */
 .hero {
   padding: 160px 20px 120px;
   background: linear-gradient(rgba(44, 62, 46, 0.65), rgba(44, 62, 46, 0.65)), 
               url('https://picsum.photos/id/1015/1600/900') center/cover no-repeat;
   color: white;
-  position: relative;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -87,7 +121,6 @@ h3 { font-size: 1.3rem; }
   font-size: 3.6rem;
   margin: 0 0 20px;
   line-height: 1.1;
-  font-weight: 700;
 }
 
 .hero p {
@@ -115,32 +148,121 @@ h3 { font-size: 1.3rem; }
   transform: translateY(-4px);
 }
 
-/* Keep your old hero styles as fallback / for other pages if needed */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("images/winding-path.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
-  opacity: 0.12;
-  pointer-events: none;
-}
-
-/* ==================== REST OF YOUR ORIGINAL CSS (unchanged) ==================== */
-
-.site-header { ... } /* all your header styles stay exactly as they were */
-
-.card, .tool-card, .reach-form-card {
+/* ==================== CARDS & CONTENT ==================== */
+.card, .tool-card, .newsletter-card {
   background: var(--card-bg);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-soft);
   padding: 1.8rem 1.6rem;
   box-shadow: var(--shadow-soft);
-  min-width: 0;
 }
 
-/* All your card, story, tool, about, newsletter, footer, responsive styles remain 100% unchanged from here down */
+.grid {
+  display: grid;
+  gap: 1.75rem;
+}
 
-.section-overline, .button-primary, .button-outline, .newsletter-row, .footer styles, etc. — all kept exactly as you had them.
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card-image {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 14px;
+  margin-bottom: 1.2rem;
+}
+
+/* Hover effects */
+.card-link {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.09);
+}
+
+/* ==================== FOOTER ==================== */
+.site-footer {
+  background: var(--bg-deep);
+  color: #f5f5f3;
+  padding-top: 4rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-block h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+  color: #d5ded8;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding: 1.5rem 0 1rem;
+  font-size: 0.85rem;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 960px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .top-nav {
+    gap: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero {
+    padding: 120px 20px 80px;
+  }
+}
