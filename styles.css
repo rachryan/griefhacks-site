@@ -137,3 +137,16 @@ a:visited {
   .hero { padding: 120px 20px 90px; }
   .top-nav a { margin-left: 1rem; }
 }
+
+/* Consistent Card Images - Uniform Look */
+.card-image {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+  border-radius: 14px;
+  margin-bottom: 1.4rem;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
