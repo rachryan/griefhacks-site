@@ -34,7 +34,18 @@
 
   
 </head>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("topNav");
 
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+  
 <body>
  <header class="site-header">
   <div class="header-inner">
@@ -280,9 +291,5 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
