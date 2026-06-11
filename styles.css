@@ -103,3 +103,41 @@ body {
   text-align: center;
   font-size: 0.85rem;
 }
+/* ===== SAFE GRID FIX ===== */
+.grid-3 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+.card, .tool-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.card-link-inner {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.card-cta {
+  margin-top: auto !important;
+}
+
+/* Better card image consistency */
+.card-image {
+  height: 170px !important;
+  object-fit: contain !important;
+  background: #f8f5f2;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+/* Top nav alignment */
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.3rem 1.5rem;
+}
