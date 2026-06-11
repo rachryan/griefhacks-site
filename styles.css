@@ -198,3 +198,44 @@ a:visited {
   padding: 16px 38px;
   font-size: 1.25rem;
 }
+
+
+/* Mobile Navigation */
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:1.8rem;
+cursor:pointer;
+color:var(--text-main);
+}
+
+@media (max-width:768px){
+.menu-toggle{display:block;}
+.top-nav{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+right:0;
+background:var(--bg-soft);
+flex-direction:column;
+padding:1rem 1.5rem;
+border-bottom:1px solid #e4e0da;
+gap:1rem;
+}
+.top-nav.active{display:flex;}
+.hero{
+padding:90px 20px 70px;
+}
+.hero h1{
+font-size:clamp(2.4rem,8vw,3rem)!important;
+line-height:1.1;
+}
+.hero p{
+font-size:1.1rem;
+}
+body{
+font-size:1.05rem;
+}
+}
