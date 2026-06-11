@@ -164,3 +164,37 @@ a:visited {
   .footer-inner { grid-template-columns: 1fr; }
   .hero { padding: 120px 20px 90px; }
 }
+/* Final Header Fix - Balanced Nav */
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.top-nav {
+  display: flex;
+  gap: 2.2rem;
+  font-weight: 500;
+}
+
+.top-nav a {
+  color: var(--text-main);
+}
+
+.top-nav a:hover {
+  color: var(--accent-dark);
+}
+.hero-cta-main {
+  background: #4a6655;
+  color: white;
+  padding: 16px 38px;
+  font-size: 1.25rem;
+}
