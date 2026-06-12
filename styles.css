@@ -120,12 +120,14 @@ a:visited {
 }
 
 .card-image {
-  height: 170px;
+  height: 140px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  background: #f8f5f2;
-  border-radius: 12px;
-  padding: 10px;
-  margin-bottom: 1.4rem;
+  padding: 16px;
 }
 
 .card-cta {
