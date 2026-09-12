@@ -1,307 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const hamburger = document.getElementById("hamburger");
-  const nav = document.getElementById("topNav");
-
-  if (hamburger && nav) {
-    hamburger.addEventListener("click", function () {
-      nav.classList.toggle("active");
-    });
-  }
-
-  const year = document.getElementById("year");
-  if (year) {
-    year.textContent = new Date().getFullYear();
-  }
-
-});
-</script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="https://griefhacks.com/" />
-  <title>GriefHacks — Honest tools for living with grief</title>
-  <meta name="description" content="GriefHacks is a calm, practical space for grief tools, honest language, and steady support after loss." />
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Social preview -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="GriefHacks" />
-  <meta property="og:title" content="GriefHacks" />
-  <meta property="og:description" content="A calm, practical space for grief tools, honest language, and steady support after loss." />
-  <meta property="og:url" content="https://griefhacks.com/" />
-  <meta property="og:image" content="https://griefhacks.com/images/social-share.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GriefHacks" />
-  <meta name="twitter:description" content="A calm, practical space for grief tools, honest language, and steady support after loss." />
-  <meta name="twitter:image" content="https://griefhacks.com/images/social-share.png" />
-
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honest tools for living with grief — GriefHacks</title>
+<meta name="description" content="Practical tools, personal stories, and words to borrow for life after loss. Start with what would help today.">
+<link rel="canonical" href="https://griefhacks.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GriefHacks">
+<meta property="og:title" content="Honest tools for living with grief">
+<meta property="og:description" content="Practical tools, personal stories, and words to borrow for life after loss. Start with what would help today.">
+<meta property="og:url" content="https://griefhacks.com/">
+<meta property="og:image" content="https://griefhacks.com/images/social-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f5ef">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const nav = document.getElementById("topNav");
-
-  hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
-</script>
-  
 <body>
- <header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="./">GriefHacks</a>
-
-    <button id="hamburger" aria-label="Open menu">
-      ☰
-    </button>
-
-    <nav class="top-nav" id="topNav">
-      <a href="#about">About</a>
-      <a href="#tools">Tools</a>
-      <a href="framework.html">Framework</a>
-      <a href="#newsletter">Newsletter</a>
-    </nav>
-  </div>
-</header>
-
-  <!-- Improved Hero -->
-  <section class="hero" id="top">
-    <div class="container">
-      <h1>A quiet corner for living with grief</h1>
-      <p>Rebuilding a life that can hold both love and sorrow.<br>Honest stories, practical tools, and gentle structure.</p>
-      
-      <a href="https://griefguide4.gumroad.com/l/grief-orientation-framework?utm_source=griefhacks&utm_medium=website&utm_campaign=hero" 
-         class="hero-cta-main">
-        Get The Grief Orientation Framework
-      </a>
-    </div>
-  </section>
-
-  <!-- Framework CTA -->
-  <section class="framework-cta">
-    <div class="container">
-      <a class="button-outline" 
-         href="https://griefguide4.gumroad.com/l/grief-orientation-framework?utm_source=griefhacks&utm_medium=website&utm_campaign=hero_cta"
-         target="_blank" rel="noopener">
-        Get The Grief Orientation Framework
-      </a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section about-section">
-    <div class="container split">
-      <div class="about-text">
-        <p class="section-overline" id="feel-seen">Welcome</p>
-        <h2>A space to be human in your grief.</h2>
-        <p>I know what it is to have your life split into <em>before</em> and <em>after</em>. GriefHacks is a quiet corner of the internet where you don’t have to perform, explain, or rush your way through loss.</p>
-        <p>Here you’ll find honest stories, practical tools, and gentle structure for rebuilding a life that can hold both love and sorrow. No toxic positivity. No fixing. Just real human experience, skillfully held.</p>
-        <p>If you’re looking for validation, language for what you’re feeling, or ways to steady yourself when the waves hit, you’re in the right place.</p>
-      </div>
-      <div class="about-illustration">
-        <img src="images/connection-hero.png" alt="Illustration representing reflection and personal story" class="about-image" loading="lazy" />
-      </div>
-    </div>
-  </section>
-
-  <!-- STORIES -->
-  <section id="stories" class="section stories-section">
-    <div class="container">
-      <p class="section-overline">Stories</p>
-      <h2>Words for the days that don’t make sense yet.</h2>
-      <p class="section-intro">Longer reflections, tools, and honest language for living with grief. Take what fits. Leave the rest.</p>
-
-      <div class="grid grid-3">
-        <article class="card card-link">
-          <a href="blog/learning-to-breathe-again.html" class="card-link-inner">
-            <img src="images/story-learning-to-breathe.png" alt="Learning to Breathe Again" class="card-image" loading="lazy" />
-            <h3>Learning to Breathe Again</h3>
-            <p>A gentle reflection on surviving the early waves of grief — and finding ways to carry the weight without letting it carry you.</p>
-            <span class="text-link card-cta">Read</span>
-          </a>
-        </article>
-
-        <article class="card card-link">
-          <a href="blog/how-to-handle-the-question.html" class="card-link-inner">
-            <img src="images/story-how-are-you.png" alt="How to handle the question" class="card-image" loading="lazy" />
-            <h3>How to handle the question “How are you?”</h3>
-            <p>Four honest answers that don’t betray your reality or drain your energy.</p>
-            <span class="text-link card-cta">Read</span>
-          </a>
-        </article>
-
-        <article class="card card-link">
-          <a href="blog/carrying-love-forward.html" class="card-link-inner">
-            <img src="images/figures-standing.png" alt="Carrying love forward" class="card-image" loading="lazy" />
-            <h3>Carrying love forward</h3>
-            <p>Carrying love forward doesn’t mean living in yesterday.</p>
-            <span class="text-link card-cta">Read</span>
-          </a>
-        </article>
-
-        <article class="card card-link">
-          <a href="blog/when-your-world-shrinks.html" class="card-link-inner">
-            <img src="images/story-when-world-shrinks.png" alt="When your world shrinks" class="card-image" loading="lazy" />
-            <h3>When your world shrinks</h3>
-            <p>Navigating friendships, family, and work when so few people understand what your days really feel like.</p>
-            <span class="text-link card-cta">Read</span>
-          </a>
-        </article>
-
-        <article class="card card-link">
-          <a href="blog/finding-your-people-after-loss.html" class="card-link-inner">
-            <img src="images/story-finding-your-people.png" alt="Finding your people after loss" class="card-image" loading="lazy" />
-            <h3>Finding your people after loss</h3>
-            <p>On outgrowing old circles and building a new kind of community.</p>
-            <span class="text-link card-cta">Read</span>
-          </a>
-        </article>
-
-        <article class="card card-link card-browse-all">
-          <a href="blog/index.html" class="card-link-inner">
-            <img src="images/cozy-hands-cradling-warm-mug.png" alt="Browse all stories" class="card-image" loading="lazy" />
-            <h3>Browse all stories</h3>
-            <p>A simple index of everything published so far—stories, tools, guides, and prompts.</p>
-            <span class="text-link card-cta">Browse</span>
-          </a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- TOOLS + RESOURCES -->
-  <section id="tools" class="section tools-section">
-    <div class="container">
-      <p class="section-overline">Grief Tools + Resources</p>
-      <h2>Steady, practical support for rough days.</h2>
-
-      <div class="grid grid-3 tools-grid">
-        <article class="tool-card card-link">
-          <a href="blog/tools-for-tricky-mornings.html" class="card-link-inner">
-            <h3>Tools for tricky mornings</h3>
-            <p>Simple nervous-system resets for when you wake up heavy and overwhelmed.</p>
-            <span class="text-link card-cta">Read</span>
-          </a>
-        </article>
-
-        <article class="tool-card card-link">
-          <a href="blog/tools-anchor-practices.html" class="card-link-inner">
-            <h3>Anchor Practices</h3>
-            <p>Short practices to help you come back to your body when your mind spirals.</p>
-            <span class="text-link card-cta">Explore</span>
-          </a>
-        </article>
-
-        <article class="tool-card card-link">
-          <a href="blog/tools-conversations-that-help.html" class="card-link-inner">
-            <h3>Conversations that help</h3>
-            <p>Scripts and prompts for talking about your grief with people in your life.</p>
-            <span class="text-link card-cta">Read</span>
-          </a>
-        </article>
-
-        <article class="tool-card card-link">
-          <a href="blog/tools-emergency-kit.html" class="card-link-inner">
-            <h3>Emergency kit</h3>
-            <p>Low-energy, low-decision tools for “just get me through today.”</p>
-            <span class="text-link card-cta">Explore</span>
-          </a>
-        </article>
-
-        <article class="tool-card card-link">
-          <a href="blog/for-anniversaries-+-dates.html" class="card-link-inner">
-            <h3>For anniversaries + dates</h3>
-            <p>Gentle structure for days that carry extra weight.</p>
-            <span class="text-link card-cta">Read</span>
-          </a>
-        </article>
-
-        <article class="tool-card card-link">
-          <a href="blog/index.html" class="card-link-inner">
-            <h3>Links &amp; Resources</h3>
-            <p>Resources on one page for you.</p>
-            <span class="text-link card-cta">Browse</span>
-          </a>
-        </article>
-
-        <article class="card card-link">
-          <a href="/framework.html" class="card-link-inner">
-            <h3>The Grief Orientation Framework</h3>
-            <p>A structured guide for living after loss without being rushed, fixed, or erased.</p>
-            <span class="text-link card-cta">View</span>
-          </a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWSLETTER -->
-  <section id="newsletter" class="section newsletter-section">
-    <div class="container">
-      <div class="card newsletter-card">
-        <p class="section-overline">Newsletter</p>
-        <h2>Stay in touch, gently.</h2>
-        <p class="section-intro">Occasional notes—reflections, tools, and reminders that you’re not doing this wrong. No spam. No fixing. Unsubscribe anytime.</p>
-
-        <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/grief_hacks" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/grief_hacks', 'popupwindow')">
-          <div class="newsletter-row">
-            <input id="newsletter-email-footer" type="email" name="email" placeholder="you@example.com" required />
-            <button type="submit" class="button-primary">Stay in touch</button>
-          </div>
-          <p class="form-note">You can unsubscribe anytime.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-block">
-        <h4>GriefHacks</h4>
-        <p class="footer-text">A calm place for grief tools, honest language, and steady support.</p>
-      </div>
-
-      <div class="footer-block">
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#stories">Stories</a></li>
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#newsletter">Newsletter</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-block">
-        <h4>Newsletter</h4>
-        <p class="footer-text">Occasional emails with grounded reflections and practical grief tools.</p>
-
-        <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/grief_hacks" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/grief_hacks', 'popupwindow')">
-          <input id="newsletter-email-footer" type="email" name="email" placeholder="you@example.com" required />
-          <button type="submit" class="submit-btn">Submit</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <span>© <span id="year"></span> GriefHacks. All rights reserved.</span>
-        <span class="footer-small-links">
-          <a href="#">Terms</a> · <a href="#">Privacy</a>
-        </span>
-      </div>
-    </div>
-  </footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a class="brand" href="index.html" aria-label="GriefHacks home">GriefHacks<span class="brand-dot" aria-hidden="true">.</span></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+<nav id="primary-nav" class="primary-nav" aria-label="Main navigation"><a href="index.html#start-here">Start here</a><a href="blog/index.html">Stories &amp; tools</a><a href="index.html#about">About</a><a href="framework.html">The guide</a><a class="nav-newsletter" href="index.html#newsletter">Letters from me <span aria-hidden="true">↗</span></a></nav>
+</div></header><main id="main" tabindex="-1">
+<section class="hero"><div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Honest tools for living with grief</p>
+<h1>Life after loss.<br><em>One day at a time.</em>
+</h1>
+<p class="hero-intro">Some days you need words. Some days you need one small thing you can do. There’s room for both here.</p>
+<div class="hero-actions">
+<a class="button" href="#start-here">Find what helps today <span aria-hidden="true">↗</span></a><a class="quiet-link" href="blog/index.html#stories">Read a story <span aria-hidden="true">→</span></a>
+</div>
+<p class="hero-note">Free to read. Take what fits. Leave the rest.</p>
+</div>
+<figure class="hero-art"><img src="images/winding-path.png" width="1536" height="1024" alt="A winding path through soft green hills, with the sun on the horizon" fetchpriority="high"><figcaption>There is no single way through.</figcaption></figure>
+</div></section>
+<section id="start-here" class="section start-section"><div class="container">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Start where you are</p>
+<h2>What would help today?</h2>
+</div>
+<p>You don’t need to work through everything.<br>Choose the place that feels closest.</p>
+</div>
+<div class="path-grid">
+<a class="path-card" href="blog/tools-emergency-kit.html"><span class="path-number">01 / A hard day</span><h3>I just need to<br>get through today.</h3>
+<p>A short checklist for when even the small things feel like a lot.</p>
+<span class="path-action">Start with one thing <span aria-hidden="true">↗</span></span></a>
+<a class="path-card" href="blog/how-to-handle-the-question.html"><span class="path-number">02 / Finding words</span><h3>I don’t know<br>what to say.</h3>
+<p>Words to borrow when explaining yourself takes more than you have.</p>
+<span class="path-action">Find the words <span aria-hidden="true">↗</span></span></a>
+<a class="path-card" href="blog/carrying-love-forward.html"><span class="path-number">03 / Living with loss</span><h3>I’m figuring out<br>life from here.</h3>
+<p>Reflections on carrying love, changing relationships, and being yourself.</p>
+<span class="path-action">Make some room <span aria-hidden="true">↗</span></span></a>
+</div>
+</div></section>
+<section id="about" class="section about-section"><div class="container about-grid">
+<div>
+<p class="eyebrow">The person behind GriefHacks</p>
+<h2>I’m Rachel.<br>You may know me<br>as <em>Momma R.</em>
+</h2>
+</div>
+<div class="about-copy">
+<p class="lead">I know what it is to have your life split into before and after.</p>
+<p>I created GriefHacks to make room for the things that can be hard to say out loud, and to share practical ways to get through ordinary days after loss.</p>
+<p>I write from lived experience. You’ll find personal stories, words you can borrow, and small things to try. You can disagree, skip something, or come back another day.</p>
+<a class="quiet-link" href="blog/learning-to-breathe-again.html">Read one of my stories <span aria-hidden="true">→</span></a>
+</div>
+</div></section>
+<section id="stories" class="section"><div class="container">
+<div class="section-heading">
+<div>
+<p class="eyebrow">From the journal</p>
+<h2>For the things you can’t quite explain.</h2>
+</div>
+<a class="quiet-link" href="blog/index.html#stories">All stories <span aria-hidden="true">→</span></a>
+</div>
+<div class="story-grid">
+<a class="story-card" href="blog/learning-to-breathe-again.html"><div class="story-image"><img src="images/story-learning-to-breathe.png" alt="" loading="lazy"></div>
+<p class="eyebrow">Personal story</p>
+<h3>Today, grief showed up again</h3>
+<p>An honest reflection on a day when grief arrives without warning.</p>
+<span class="quiet-link">Read the story <span aria-hidden="true">↗</span></span></a><a class="story-card" href="blog/when-your-world-shrinks.html"><div class="story-image"><img src="images/story-when-world-shrinks.png" alt="" loading="lazy"></div>
+<p class="eyebrow">Personal story</p>
+<h3>When your world gets smaller after loss</h3>
+<p>The changes in friendships, family, and work that can follow a loss.</p>
+<span class="quiet-link">Read the story <span aria-hidden="true">↗</span></span></a><a class="story-card" href="blog/carrying-love-forward.html"><div class="story-image"><img src="images/figures-standing.png" alt="" loading="lazy"></div>
+<p class="eyebrow">Personal story</p>
+<h3>Carrying love forward</h3>
+<p>How the love you carry can continue to shape your everyday life.</p>
+<span class="quiet-link">Read the story <span aria-hidden="true">↗</span></span></a>
+</div>
+</div></section><section id="tools" class="section tools-section"><div class="container tools-layout">
+<div class="tools-intro">
+<p class="eyebrow">Something you can use</p>
+<h2>Small tools.<br>Real life.</h2>
+<p>A little structure for difficult mornings, conversations, and dates.</p>
+<a class="quiet-link" href="blog/index.html#tools">All practical tools <span aria-hidden="true">→</span></a>
+</div>
+<div class="resource-list">
+<a class="resource-row" href="blog/tools-for-tricky-mornings.html"><div>
+<span class="eyebrow">Practical tool</span><h3>4 simple resets for hard mornings</h3>
+<p>Small ways to begin a morning that already feels heavy.</p>
+</div>
+<span class="row-arrow" aria-hidden="true">↗</span></a><a class="resource-row" href="blog/tools-conversations-that-help.html"><div>
+<span class="eyebrow">Words to borrow</span><h3>What to say when grief feels hard to explain</h3>
+<p>Words for asking for help, setting boundaries, and being heard.</p>
+</div>
+<span class="row-arrow" aria-hidden="true">↗</span></a><a class="resource-row" href="blog/for-anniversaries-+-dates.html"><div>
+<span class="eyebrow">Practical tool</span><h3>For anniversaries and difficult dates</h3>
+<p>Make a manageable plan for a day that carries extra weight.</p>
+</div>
+<span class="row-arrow" aria-hidden="true">↗</span></a>
+</div>
+</div></section>
+<section class="section"><div class="container guide-panel">
+<div class="guide-label">
+<span class="eyebrow">For when you want more structure</span><span class="guide-monogram" aria-hidden="true">G<span>.</span></span><span class="small">The Grief Orientation Framework</span>
+</div>
+<div class="guide-copy">
+<p class="eyebrow">A guide to explore in your own time</p>
+<h2>Finding your footing<br>in a changed life.</h2>
+<p>The Grief Orientation Framework brings together my perspective on choice, permanence, boundaries, and identity after loss.</p>
+<p>You can read about the guide before deciding whether it’s right for you.</p>
+<a class="button" href="framework.html">See what’s inside <span aria-hidden="true">↗</span></a><p class="small">Paid guide · Available through Gumroad</p>
+</div>
+</div></section>
+<section id="newsletter" class="section newsletter-section"><div class="container newsletter-layout">
+<div>
+<p class="eyebrow">Letters from me</p>
+<h2>A little company<br>in your inbox.</h2>
+<p>Occasional reflections and practical tools for living with grief.</p>
+</div>
+<form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/grief_hacks" method="post">
+<label for="newsletter-email">Your email address</label><div class="newsletter-fields">
+<input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Sign me up <span aria-hidden="true">→</span></button>
+</div>
+<p class="small">Unsubscribe anytime. Subscriptions are handled by <a href="https://buttondown.com/legal/privacy">Buttondown</a>.</p>
+</form>
+</div></section></main><footer class="site-footer"><div class="container footer-top">
+<div>
+<a class="brand" href="index.html">GriefHacks<span class="brand-dot" aria-hidden="true">.</span></a><p>Honest tools for living with grief.</p>
+</div>
+<nav aria-label="Footer navigation"><a href="blog/index.html">Stories &amp; tools</a><a href="index.html#about">About</a><a href="framework.html">The guide</a><a href="index.html#newsletter">Newsletter</a></nav>
+</div>
+<div class="container footer-bottom">
+<p>© <span data-year>2026</span> GriefHacks</p>
+<p>Personal experience and everyday support. Not a counselling service.</p>
+</div></footer>
 </body>
 </html>
