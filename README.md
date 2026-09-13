@@ -16,7 +16,7 @@ From this directory, run `python3 -m http.server 8080`, then open `http://localh
 - `script.js`: accessible mobile navigation and footer year.
 - `images/`: existing site illustrations.
 
-Headers and footers are static HTML so they remain available without JavaScript. When changing shared navigation, apply the same change to all 13 pages. Keep labels, canonical URLs, page titles, and descriptions aligned with the article content.
+Headers and footers are static HTML so they remain available without JavaScript. When changing shared navigation, apply the same change to all 16 pages. Keep labels, canonical URLs, page titles, and descriptions aligned with the article content.
 
 ## Verify before publishing
 
@@ -36,3 +36,13 @@ The main signup uses the existing Buttondown address. It has not been verified b
 The redesign branch is a draft. Local-browser preview access was blocked in the editing environment, so rendered visual and interaction checks remain required before merging. Automated link and structure checks, JavaScript syntax, and primary text contrast pairs were checked.
 
 The guide's published chapter titles are retained to avoid misrepresenting the purchased product. Any proposed renaming should be coordinated with the guide itself. The author introduction uses Rachel and the existing Momma R byline, without adding private family details.
+
+## September follow-up
+
+The first redesign is live. The follow-up branch adds larger supporting text, a shorter hero, a direct support-kit link, practical tools nearer the top, related-article links, a clearer About section, support/privacy/contact pages, and complete social metadata plus sitemap/robots files.
+
+Resource details were checked on 13 September 2026 against BC Bereavement Helpline, GRASP, AboutGrief.ca, and 988.ca. Provider information is linked directly on the support/privacy pages.
+
+The contact form reuses the original Formspree endpoint found in repository history (commit 13ecbe3). Its availability and delivery remain unverified: a read-only request returned HTTP 403. Verify this endpoint in the owner's Formspree account and perform an authorised test before publishing the contact form. No test message or newsletter subscription was sent.
+
+The live homepage was visually inspected. The updated local draft still requires desktop/mobile visual checks because local URLs are blocked by the browser policy.
